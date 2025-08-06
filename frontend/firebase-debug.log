@@ -1,0 +1,1144 @@
+[debug] [2025-08-06T13:55:30.398Z] ----------------------------------------------------------------------
+[debug] [2025-08-06T13:55:30.400Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-08-06T13:55:30.400Z] CLI Version:   14.11.2
+[debug] [2025-08-06T13:55:30.401Z] Platform:      darwin
+[debug] [2025-08-06T13:55:30.401Z] Node Version:  v22.15.0
+[debug] [2025-08-06T13:55:30.401Z] Time:          Wed Aug 06 2025 19:25:30 GMT+0530 (India Standard Time)
+[debug] [2025-08-06T13:55:30.401Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-06T13:55:30.629Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-06T13:55:30.630Z] > authorizing via signed-in user (ranit53222@gmail.com)
+[debug] [2025-08-06T13:55:30.630Z] [iam] checking project chitrayaan-website-7122233 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-06T13:55:30.630Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:30.630Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:30.631Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions [none]
+[debug] [2025-08-06T13:55:30.631Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions x-goog-quota-user=projects/chitrayaan-website-7122233
+[debug] [2025-08-06T13:55:30.631Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T13:55:32.217Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions 200
+[debug] [2025-08-06T13:55:32.217Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T13:55:32.218Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:32.218Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:32.218Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 [none]
+[debug] [2025-08-06T13:55:32.666Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 200
+[debug] [2025-08-06T13:55:32.666Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 {"projectId":"chitrayaan-website-7122233","projectNumber":"293195269146","displayName":"Chitrayaan Website","name":"projects/chitrayaan-website-7122233","resources":{"hostingSite":"chitrayaan-website-7122233"},"state":"ACTIVE","etag":"1_907d3a86-ae4a-4f7f-90f4-4fa4b04519b4"}
+[info] 
+[info] === Deploying to 'chitrayaan-website-7122233'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-06T13:55:32.672Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:32.672Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:32.672Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions [none]
+[debug] [2025-08-06T13:55:32.672Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-06T13:55:34.711Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions 200
+[debug] [2025-08-06T13:55:34.711Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/f9170c986e54941f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[chitrayaan-website-7122233]: beginning deploy... 
+[info] i  hosting[chitrayaan-website-7122233]: found 1 files in y 
+[debug] [2025-08-06T13:55:34.726Z] [hosting] uploading with 200 concurrency
+[debug] [2025-08-06T13:55:34.727Z] [hosting] hash cache [eQ] not populated
+[debug] [2025-08-06T13:55:34.730Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:34.730Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:34.730Z] [hosting] hash cache [eQ] stored for 1 files
+[debug] [2025-08-06T13:55:34.731Z] [hosting][hash queue][FINAL] {"max":3,"min":3,"avg":3,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":4}
+[debug] [2025-08-06T13:55:34.731Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/f9170c986e54941f:populateFiles [none]
+[debug] [2025-08-06T13:55:34.731Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/f9170c986e54941f:populateFiles {"files":{"/index.html":"db1f396b1e4cce660c3a7ab10a88e77ea97211cb9ce4a509282438a9a3f5d28a"}}
+[debug] [2025-08-06T13:55:35.179Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/f9170c986e54941f:populateFiles 200
+[debug] [2025-08-06T13:55:35.179Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/f9170c986e54941f:populateFiles {"uploadRequiredHashes":["db1f396b1e4cce660c3a7ab10a88e77ea97211cb9ce4a509282438a9a3f5d28a"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/f9170c986e54941f/files"}
+[debug] [2025-08-06T13:55:35.180Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:35.180Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:35.180Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/f9170c986e54941f/files/db1f396b1e4cce660c3a7ab10a88e77ea97211cb9ce4a509282438a9a3f5d28a [none]
+[debug] [2025-08-06T13:55:35.180Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/f9170c986e54941f/files/db1f396b1e4cce660c3a7ab10a88e77ea97211cb9ce4a509282438a9a3f5d28a [stream]
+[debug] [2025-08-06T13:55:35.182Z] [hosting][populate queue][FINAL] {"max":450,"min":450,"avg":450,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":452}
+[debug] [2025-08-06T13:55:35.182Z] [hosting] uploads queued: 1
+[debug] [2025-08-06T13:55:36.457Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/f9170c986e54941f/files/db1f396b1e4cce660c3a7ab10a88e77ea97211cb9ce4a509282438a9a3f5d28a 200
+[debug] [2025-08-06T13:55:36.457Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/f9170c986e54941f/files/db1f396b1e4cce660c3a7ab10a88e77ea97211cb9ce4a509282438a9a3f5d28a [stream]
+[debug] [2025-08-06T13:55:36.457Z] [hosting][upload queue][FINAL] {"max":1278,"min":1278,"avg":1278,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1278}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[chitrayaan-website-7122233]: file upload complete 
+[debug] [2025-08-06T13:55:36.458Z] [hosting] deploy completed after 1742ms
+[debug] [2025-08-06T13:55:36.458Z] [
+  {
+    "config": {
+      "public": "y",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "chitrayaan-website-7122233"
+    },
+    "version": "projects/293195269146/sites/chitrayaan-website-7122233/versions/f9170c986e54941f"
+  }
+]
+[info] i  hosting[chitrayaan-website-7122233]: finalizing version... 
+[debug] [2025-08-06T13:55:36.460Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:36.460Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:36.460Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/f9170c986e54941f updateMask=status%2Cconfig
+[debug] [2025-08-06T13:55:36.460Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/f9170c986e54941f {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-08-06T13:55:36.966Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/f9170c986e54941f 200
+[debug] [2025-08-06T13:55:36.966Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/f9170c986e54941f {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/f9170c986e54941f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T13:55:33.858451Z","createUser":{"email":"ranit53222@gmail.com"},"finalizeTime":"2025-08-06T13:55:36.792360Z","finalizeUser":{"email":"ranit53222@gmail.com"}}
+[debug] [2025-08-06T13:55:36.966Z] [hosting] finalized version for chitrayaan-website-7122233:[object Object]
+[info] ✔  hosting[chitrayaan-website-7122233]: version finalized 
+[info] i  hosting[chitrayaan-website-7122233]: releasing new version... 
+[debug] [2025-08-06T13:55:36.967Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:36.967Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:55:36.967Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases versionName=projects%2F293195269146%2Fsites%2Fchitrayaan-website-7122233%2Fversions%2Ff9170c986e54941f
+[debug] [2025-08-06T13:55:36.967Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {}
+[debug] [2025-08-06T13:55:37.509Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases 200
+[debug] [2025-08-06T13:55:37.510Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754488536712000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/f9170c986e54941f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T13:55:33.858451Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T13:55:36.792360Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T13:55:36.712Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[debug] [2025-08-06T13:55:37.510Z] [hosting] release: {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754488536712000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/f9170c986e54941f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T13:55:33.858451Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T13:55:36.792360Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T13:55:36.712Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[info] ✔  hosting[chitrayaan-website-7122233]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/chitrayaan-website-7122233/overview
+[info] Hosting URL: https://chitrayaan-website-7122233.web.app
+[debug] [2025-08-06T13:57:36.486Z] ----------------------------------------------------------------------
+[debug] [2025-08-06T13:57:36.491Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-08-06T13:57:36.492Z] CLI Version:   14.11.2
+[debug] [2025-08-06T13:57:36.492Z] Platform:      darwin
+[debug] [2025-08-06T13:57:36.492Z] Node Version:  v22.15.0
+[debug] [2025-08-06T13:57:36.492Z] Time:          Wed Aug 06 2025 19:27:36 GMT+0530 (India Standard Time)
+[debug] [2025-08-06T13:57:36.492Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-06T13:57:36.713Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-06T13:57:36.715Z] > authorizing via signed-in user (ranit53222@gmail.com)
+[debug] [2025-08-06T13:57:36.715Z] [iam] checking project chitrayaan-website-7122233 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-06T13:57:36.716Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:36.716Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:36.717Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions [none]
+[debug] [2025-08-06T13:57:36.717Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions x-goog-quota-user=projects/chitrayaan-website-7122233
+[debug] [2025-08-06T13:57:36.717Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T13:57:38.279Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions 200
+[debug] [2025-08-06T13:57:38.279Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T13:57:38.279Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:38.279Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:38.279Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 [none]
+[debug] [2025-08-06T13:57:38.739Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 200
+[debug] [2025-08-06T13:57:38.739Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 {"projectId":"chitrayaan-website-7122233","projectNumber":"293195269146","displayName":"Chitrayaan Website","name":"projects/chitrayaan-website-7122233","resources":{"hostingSite":"chitrayaan-website-7122233"},"state":"ACTIVE","etag":"1_907d3a86-ae4a-4f7f-90f4-4fa4b04519b4"}
+[info] 
+[info] === Deploying to 'chitrayaan-website-7122233'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-06T13:57:38.745Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:38.745Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:38.745Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions [none]
+[debug] [2025-08-06T13:57:38.745Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-06T13:57:40.245Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions 200
+[debug] [2025-08-06T13:57:40.245Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[chitrayaan-website-7122233]: beginning deploy... 
+[info] i  hosting[chitrayaan-website-7122233]: found 16 files in build 
+[debug] [2025-08-06T13:57:40.253Z] [hosting] uploading with 200 concurrency
+[debug] [2025-08-06T13:57:40.254Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2025-08-06T13:57:41.159Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.159Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.160Z] [hosting] hash cache [YnVpbGQ] stored for 16 files
+[debug] [2025-08-06T13:57:41.160Z] [hosting][hash queue][FINAL] {"max":904,"min":5,"avg":78.6875,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":906}
+[debug] [2025-08-06T13:57:41.160Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a:populateFiles [none]
+[debug] [2025-08-06T13:57:41.160Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a:populateFiles {"files":{"/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/manifest.json":"4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","/asset-manifest.json":"97bd0bf6890bee1eec405680e5c5388027409685b30a51ec2bfa526b8a267bd1","/logo512.png":"2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","/favicon.ico":"1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","/index.html":"d37ea4058f29a8af422c5bc89a079edeb68321923ac49e49e322925399aea686","/logo192.png":"f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150","/static/js/main.9a529e8d.js.LICENSE.txt":"36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea","/static/js/453.670e15c7.chunk.js":"bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e","/static/js/453.670e15c7.chunk.js.map":"154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549","/static/css/main.1740adf8.css":"860b1d0eb83dd7a06dd05641e4c1266a00c1c5e6a1cf518a8733d626d270d6df","/static/js/main.9a529e8d.js":"3f3942fb3d203e6b9ad57cee321611e58f6da6a7f9e0815f07809e0ca78cb88c","/static/css/main.1740adf8.css.map":"90a030cae22f450b44102432f732cf0de385ca23cccc31db4afe7b3e4645fb1b","/static/media/chitraYaanLogo.5ed36c41c6ebd210c36c.png":"53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31","/static/js/main.9a529e8d.js.map":"d9258dc04934041dad9df96a3c4820c8438da351172c5df3025c8e8c17c8e792","/static/media/back.ac7df313e510808a5397.mp4":"8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35"}}
+[debug] [2025-08-06T13:57:41.637Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a:populateFiles 200
+[debug] [2025-08-06T13:57:41.637Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a:populateFiles {"uploadRequiredHashes":["d9258dc04934041dad9df96a3c4820c8438da351172c5df3025c8e8c17c8e792","1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35","d37ea4058f29a8af422c5bc89a079edeb68321923ac49e49e322925399aea686","97bd0bf6890bee1eec405680e5c5388027409685b30a51ec2bfa526b8a267bd1","2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","3f3942fb3d203e6b9ad57cee321611e58f6da6a7f9e0815f07809e0ca78cb88c","4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e","860b1d0eb83dd7a06dd05641e4c1266a00c1c5e6a1cf518a8733d626d270d6df","391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea","53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31","90a030cae22f450b44102432f732cf0de385ca23cccc31db4afe7b3e4645fb1b","154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549","f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files"}
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.637Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:41.638Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/d9258dc04934041dad9df96a3c4820c8438da351172c5df3025c8e8c17c8e792 [none]
+[debug] [2025-08-06T13:57:41.638Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/d9258dc04934041dad9df96a3c4820c8438da351172c5df3025c8e8c17c8e792 [stream]
+[debug] [2025-08-06T13:57:41.639Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407 [none]
+[debug] [2025-08-06T13:57:41.639Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407 [stream]
+[debug] [2025-08-06T13:57:41.639Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35 [none]
+[debug] [2025-08-06T13:57:41.639Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35 [stream]
+[debug] [2025-08-06T13:57:41.640Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/d37ea4058f29a8af422c5bc89a079edeb68321923ac49e49e322925399aea686 [none]
+[debug] [2025-08-06T13:57:41.640Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/d37ea4058f29a8af422c5bc89a079edeb68321923ac49e49e322925399aea686 [stream]
+[debug] [2025-08-06T13:57:41.641Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/97bd0bf6890bee1eec405680e5c5388027409685b30a51ec2bfa526b8a267bd1 [none]
+[debug] [2025-08-06T13:57:41.641Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/97bd0bf6890bee1eec405680e5c5388027409685b30a51ec2bfa526b8a267bd1 [stream]
+[debug] [2025-08-06T13:57:41.642Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f [none]
+[debug] [2025-08-06T13:57:41.642Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f [stream]
+[debug] [2025-08-06T13:57:41.642Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/3f3942fb3d203e6b9ad57cee321611e58f6da6a7f9e0815f07809e0ca78cb88c [none]
+[debug] [2025-08-06T13:57:41.642Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/3f3942fb3d203e6b9ad57cee321611e58f6da6a7f9e0815f07809e0ca78cb88c [stream]
+[debug] [2025-08-06T13:57:41.642Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118 [none]
+[debug] [2025-08-06T13:57:41.642Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118 [stream]
+[debug] [2025-08-06T13:57:41.643Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e [none]
+[debug] [2025-08-06T13:57:41.643Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e [stream]
+[debug] [2025-08-06T13:57:41.643Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/860b1d0eb83dd7a06dd05641e4c1266a00c1c5e6a1cf518a8733d626d270d6df [none]
+[debug] [2025-08-06T13:57:41.643Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/860b1d0eb83dd7a06dd05641e4c1266a00c1c5e6a1cf518a8733d626d270d6df [stream]
+[debug] [2025-08-06T13:57:41.643Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 [none]
+[debug] [2025-08-06T13:57:41.643Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 [stream]
+[debug] [2025-08-06T13:57:41.644Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea [none]
+[debug] [2025-08-06T13:57:41.644Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea [stream]
+[debug] [2025-08-06T13:57:41.644Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31 [none]
+[debug] [2025-08-06T13:57:41.644Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31 [stream]
+[debug] [2025-08-06T13:57:41.644Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/90a030cae22f450b44102432f732cf0de385ca23cccc31db4afe7b3e4645fb1b [none]
+[debug] [2025-08-06T13:57:41.644Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/90a030cae22f450b44102432f732cf0de385ca23cccc31db4afe7b3e4645fb1b [stream]
+[debug] [2025-08-06T13:57:41.644Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549 [none]
+[debug] [2025-08-06T13:57:41.644Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549 [stream]
+[debug] [2025-08-06T13:57:41.645Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150 [none]
+[debug] [2025-08-06T13:57:41.645Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150 [stream]
+[debug] [2025-08-06T13:57:41.645Z] [hosting][populate queue][FINAL] {"max":479,"min":479,"avg":479,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":486}
+[debug] [2025-08-06T13:57:41.645Z] [hosting] uploads queued: 16
+[info] i  hosting: uploading new files [0/16] (0%) 
+[debug] [2025-08-06T13:57:42.826Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f 200
+[debug] [2025-08-06T13:57:42.826Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f [stream]
+[debug] [2025-08-06T13:57:42.843Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407 200
+[debug] [2025-08-06T13:57:42.843Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407 [stream]
+[debug] [2025-08-06T13:57:42.891Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118 200
+[debug] [2025-08-06T13:57:42.891Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118 [stream]
+[debug] [2025-08-06T13:57:42.935Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150 200
+[debug] [2025-08-06T13:57:42.935Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150 [stream]
+[debug] [2025-08-06T13:57:42.939Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e 200
+[debug] [2025-08-06T13:57:42.940Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e [stream]
+[debug] [2025-08-06T13:57:42.940Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 200
+[debug] [2025-08-06T13:57:42.940Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 [stream]
+[debug] [2025-08-06T13:57:43.022Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549 200
+[debug] [2025-08-06T13:57:43.022Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549 [stream]
+[debug] [2025-08-06T13:57:43.189Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/d37ea4058f29a8af422c5bc89a079edeb68321923ac49e49e322925399aea686 200
+[debug] [2025-08-06T13:57:43.189Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/d37ea4058f29a8af422c5bc89a079edeb68321923ac49e49e322925399aea686 [stream]
+[debug] [2025-08-06T13:57:43.242Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/97bd0bf6890bee1eec405680e5c5388027409685b30a51ec2bfa526b8a267bd1 200
+[debug] [2025-08-06T13:57:43.242Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/97bd0bf6890bee1eec405680e5c5388027409685b30a51ec2bfa526b8a267bd1 [stream]
+[debug] [2025-08-06T13:57:43.306Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/90a030cae22f450b44102432f732cf0de385ca23cccc31db4afe7b3e4645fb1b 200
+[debug] [2025-08-06T13:57:43.307Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/90a030cae22f450b44102432f732cf0de385ca23cccc31db4afe7b3e4645fb1b [stream]
+[debug] [2025-08-06T13:57:43.315Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/860b1d0eb83dd7a06dd05641e4c1266a00c1c5e6a1cf518a8733d626d270d6df 200
+[debug] [2025-08-06T13:57:43.315Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/860b1d0eb83dd7a06dd05641e4c1266a00c1c5e6a1cf518a8733d626d270d6df [stream]
+[debug] [2025-08-06T13:57:43.328Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/3f3942fb3d203e6b9ad57cee321611e58f6da6a7f9e0815f07809e0ca78cb88c 200
+[debug] [2025-08-06T13:57:43.328Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/3f3942fb3d203e6b9ad57cee321611e58f6da6a7f9e0815f07809e0ca78cb88c [stream]
+[debug] [2025-08-06T13:57:43.414Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea 200
+[debug] [2025-08-06T13:57:43.414Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea [stream]
+[debug] [2025-08-06T13:57:43.673Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/d9258dc04934041dad9df96a3c4820c8438da351172c5df3025c8e8c17c8e792 200
+[debug] [2025-08-06T13:57:43.673Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/d9258dc04934041dad9df96a3c4820c8438da351172c5df3025c8e8c17c8e792 [stream]
+[debug] [2025-08-06T13:57:43.713Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31 200
+[debug] [2025-08-06T13:57:43.713Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31 [stream]
+[info] i  hosting: uploading new files [15/16] (93%) 
+[info] i  hosting: uploading new files [15/16] (93%) 
+[info] i  hosting: uploading new files [15/16] (93%) 
+[debug] [2025-08-06T13:57:48.655Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35 200
+[debug] [2025-08-06T13:57:48.655Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a/files/8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35 [stream]
+[debug] [2025-08-06T13:57:48.655Z] [hosting][upload queue][FINAL] {"max":7018,"min":1189,"avg":1877.125,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":7018}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[chitrayaan-website-7122233]: file upload complete 
+[debug] [2025-08-06T13:57:48.656Z] [hosting] deploy completed after 8410ms
+[debug] [2025-08-06T13:57:48.656Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "chitrayaan-website-7122233"
+    },
+    "version": "projects/293195269146/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a"
+  }
+]
+[info] i  hosting[chitrayaan-website-7122233]: finalizing version... 
+[debug] [2025-08-06T13:57:48.657Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:48.657Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:48.658Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a updateMask=status%2Cconfig
+[debug] [2025-08-06T13:57:48.658Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-08-06T13:57:50.063Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a 200
+[debug] [2025-08-06T13:57:50.063Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T13:57:39.702760Z","createUser":{"email":"ranit53222@gmail.com"},"finalizeTime":"2025-08-06T13:57:49.893267Z","finalizeUser":{"email":"ranit53222@gmail.com"}}
+[debug] [2025-08-06T13:57:50.064Z] [hosting] finalized version for chitrayaan-website-7122233:[object Object]
+[info] ✔  hosting[chitrayaan-website-7122233]: version finalized 
+[info] i  hosting[chitrayaan-website-7122233]: releasing new version... 
+[debug] [2025-08-06T13:57:50.064Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:50.064Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T13:57:50.064Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases versionName=projects%2F293195269146%2Fsites%2Fchitrayaan-website-7122233%2Fversions%2F925ef1544fe3356a
+[debug] [2025-08-06T13:57:50.064Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {}
+[debug] [2025-08-06T13:57:50.820Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases 200
+[debug] [2025-08-06T13:57:50.820Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754488670033000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T13:57:39.702760Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T13:57:49.893267Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T13:57:50.033Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[debug] [2025-08-06T13:57:50.820Z] [hosting] release: {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754488670033000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/925ef1544fe3356a","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T13:57:39.702760Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T13:57:49.893267Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T13:57:50.033Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[info] ✔  hosting[chitrayaan-website-7122233]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/chitrayaan-website-7122233/overview
+[info] Hosting URL: https://chitrayaan-website-7122233.web.app
+[debug] [2025-08-06T14:03:21.698Z] ----------------------------------------------------------------------
+[debug] [2025-08-06T14:03:21.703Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-08-06T14:03:21.703Z] CLI Version:   14.11.2
+[debug] [2025-08-06T14:03:21.703Z] Platform:      darwin
+[debug] [2025-08-06T14:03:21.703Z] Node Version:  v22.15.0
+[debug] [2025-08-06T14:03:21.703Z] Time:          Wed Aug 06 2025 19:33:21 GMT+0530 (India Standard Time)
+[debug] [2025-08-06T14:03:21.703Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-06T14:03:21.856Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-06T14:03:21.856Z] > authorizing via signed-in user (ranit53222@gmail.com)
+[debug] [2025-08-06T14:03:21.857Z] [iam] checking project chitrayaan-website-7122233 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-06T14:03:21.857Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:21.857Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:21.858Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions [none]
+[debug] [2025-08-06T14:03:21.858Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions x-goog-quota-user=projects/chitrayaan-website-7122233
+[debug] [2025-08-06T14:03:21.858Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:03:23.421Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions 200
+[debug] [2025-08-06T14:03:23.421Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:03:23.422Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:23.422Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:23.422Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 [none]
+[debug] [2025-08-06T14:03:24.799Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 200
+[debug] [2025-08-06T14:03:24.799Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 {"projectId":"chitrayaan-website-7122233","projectNumber":"293195269146","displayName":"Chitrayaan Website","name":"projects/chitrayaan-website-7122233","resources":{"hostingSite":"chitrayaan-website-7122233"},"state":"ACTIVE","etag":"1_907d3a86-ae4a-4f7f-90f4-4fa4b04519b4"}
+[info] 
+[info] === Deploying to 'chitrayaan-website-7122233'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-06T14:03:24.802Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:24.802Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:24.802Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions [none]
+[debug] [2025-08-06T14:03:24.802Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-06T14:03:26.447Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions 200
+[debug] [2025-08-06T14:03:26.447Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/d663c1afde117925","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[chitrayaan-website-7122233]: beginning deploy... 
+[info] i  hosting[chitrayaan-website-7122233]: found 16 files in build 
+[debug] [2025-08-06T14:03:26.458Z] [hosting] uploading with 200 concurrency
+[debug] [2025-08-06T14:03:27.401Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.401Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.403Z] [hosting] hash cache [YnVpbGQ] stored for 16 files
+[debug] [2025-08-06T14:03:27.403Z] [hosting][hash queue][FINAL] {"max":941,"min":5,"avg":77.875,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":945}
+[debug] [2025-08-06T14:03:27.403Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/d663c1afde117925:populateFiles [none]
+[debug] [2025-08-06T14:03:27.403Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/d663c1afde117925:populateFiles {"files":{"/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/manifest.json":"4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","/index.html":"1b67d275fad5a250717c9e19e08e94520ecdbef3463438a1529640e0ad9b219e","/logo512.png":"2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","/asset-manifest.json":"c0cf89c11f515c16d448fe17c113836efbf3c25db7f787d81287170ac2e9d2ec","/favicon.ico":"1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","/logo192.png":"f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150","/static/js/main.6b6f8bdd.js.LICENSE.txt":"36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea","/static/js/453.670e15c7.chunk.js.map":"154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549","/static/js/453.670e15c7.chunk.js":"bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e","/static/css/main.6be200c5.css":"ebcd3f58a4b37838efa7c8445421febd2b4c2aba0b6eddd7d5158170e8c43858","/static/js/main.6b6f8bdd.js":"4fa17de688ec37e126f5a34e84795d8f6a54e1071d9310f00f454b20b805fbe6","/static/css/main.6be200c5.css.map":"84e6d10315db3dc89afa1916e2d56de894147f70a8c2ad8783e2a1e8b321203d","/static/media/chitraYaanLogo.5ed36c41c6ebd210c36c.png":"53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31","/static/js/main.6b6f8bdd.js.map":"ee3171026ac64e1ba59758b9160b18d707f8ae7c2e82633bebdc5291773895b1","/static/media/back.ac7df313e510808a5397.mp4":"8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35"}}
+[debug] [2025-08-06T14:03:27.925Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/d663c1afde117925:populateFiles 200
+[debug] [2025-08-06T14:03:27.925Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/d663c1afde117925:populateFiles {"uploadRequiredHashes":["c0cf89c11f515c16d448fe17c113836efbf3c25db7f787d81287170ac2e9d2ec","84e6d10315db3dc89afa1916e2d56de894147f70a8c2ad8783e2a1e8b321203d","1b67d275fad5a250717c9e19e08e94520ecdbef3463438a1529640e0ad9b219e","ee3171026ac64e1ba59758b9160b18d707f8ae7c2e82633bebdc5291773895b1","4fa17de688ec37e126f5a34e84795d8f6a54e1071d9310f00f454b20b805fbe6","ebcd3f58a4b37838efa7c8445421febd2b4c2aba0b6eddd7d5158170e8c43858"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files"}
+[debug] [2025-08-06T14:03:27.925Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.925Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.925Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.925Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.925Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.925Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.926Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.926Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.926Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.926Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.926Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.926Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:27.926Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/c0cf89c11f515c16d448fe17c113836efbf3c25db7f787d81287170ac2e9d2ec [none]
+[debug] [2025-08-06T14:03:27.926Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/c0cf89c11f515c16d448fe17c113836efbf3c25db7f787d81287170ac2e9d2ec [stream]
+[debug] [2025-08-06T14:03:27.927Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/84e6d10315db3dc89afa1916e2d56de894147f70a8c2ad8783e2a1e8b321203d [none]
+[debug] [2025-08-06T14:03:27.927Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/84e6d10315db3dc89afa1916e2d56de894147f70a8c2ad8783e2a1e8b321203d [stream]
+[debug] [2025-08-06T14:03:27.927Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/1b67d275fad5a250717c9e19e08e94520ecdbef3463438a1529640e0ad9b219e [none]
+[debug] [2025-08-06T14:03:27.927Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/1b67d275fad5a250717c9e19e08e94520ecdbef3463438a1529640e0ad9b219e [stream]
+[debug] [2025-08-06T14:03:27.928Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/ee3171026ac64e1ba59758b9160b18d707f8ae7c2e82633bebdc5291773895b1 [none]
+[debug] [2025-08-06T14:03:27.928Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/ee3171026ac64e1ba59758b9160b18d707f8ae7c2e82633bebdc5291773895b1 [stream]
+[debug] [2025-08-06T14:03:27.928Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/4fa17de688ec37e126f5a34e84795d8f6a54e1071d9310f00f454b20b805fbe6 [none]
+[debug] [2025-08-06T14:03:27.928Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/4fa17de688ec37e126f5a34e84795d8f6a54e1071d9310f00f454b20b805fbe6 [stream]
+[debug] [2025-08-06T14:03:27.929Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/ebcd3f58a4b37838efa7c8445421febd2b4c2aba0b6eddd7d5158170e8c43858 [none]
+[debug] [2025-08-06T14:03:27.929Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/ebcd3f58a4b37838efa7c8445421febd2b4c2aba0b6eddd7d5158170e8c43858 [stream]
+[debug] [2025-08-06T14:03:27.930Z] [hosting][populate queue][FINAL] {"max":525,"min":525,"avg":525,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":529}
+[debug] [2025-08-06T14:03:27.930Z] [hosting] uploads queued: 6
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2025-08-06T14:03:29.238Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/c0cf89c11f515c16d448fe17c113836efbf3c25db7f787d81287170ac2e9d2ec 200
+[debug] [2025-08-06T14:03:29.238Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/c0cf89c11f515c16d448fe17c113836efbf3c25db7f787d81287170ac2e9d2ec [stream]
+[debug] [2025-08-06T14:03:29.457Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/1b67d275fad5a250717c9e19e08e94520ecdbef3463438a1529640e0ad9b219e 200
+[debug] [2025-08-06T14:03:29.457Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/1b67d275fad5a250717c9e19e08e94520ecdbef3463438a1529640e0ad9b219e [stream]
+[debug] [2025-08-06T14:03:29.468Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/ebcd3f58a4b37838efa7c8445421febd2b4c2aba0b6eddd7d5158170e8c43858 200
+[debug] [2025-08-06T14:03:29.468Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/ebcd3f58a4b37838efa7c8445421febd2b4c2aba0b6eddd7d5158170e8c43858 [stream]
+[debug] [2025-08-06T14:03:29.612Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/4fa17de688ec37e126f5a34e84795d8f6a54e1071d9310f00f454b20b805fbe6 200
+[debug] [2025-08-06T14:03:29.612Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/4fa17de688ec37e126f5a34e84795d8f6a54e1071d9310f00f454b20b805fbe6 [stream]
+[debug] [2025-08-06T14:03:29.634Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/84e6d10315db3dc89afa1916e2d56de894147f70a8c2ad8783e2a1e8b321203d 200
+[debug] [2025-08-06T14:03:29.634Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/84e6d10315db3dc89afa1916e2d56de894147f70a8c2ad8783e2a1e8b321203d [stream]
+[debug] [2025-08-06T14:03:29.794Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/ee3171026ac64e1ba59758b9160b18d707f8ae7c2e82633bebdc5291773895b1 200
+[debug] [2025-08-06T14:03:29.794Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/d663c1afde117925/files/ee3171026ac64e1ba59758b9160b18d707f8ae7c2e82633bebdc5291773895b1 [stream]
+[debug] [2025-08-06T14:03:29.794Z] [hosting][upload queue][FINAL] {"max":1869,"min":1313,"avg":1608.6666666666667,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":1869}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[chitrayaan-website-7122233]: file upload complete 
+[debug] [2025-08-06T14:03:29.794Z] [hosting] deploy completed after 3345ms
+[debug] [2025-08-06T14:03:29.794Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "chitrayaan-website-7122233"
+    },
+    "version": "projects/293195269146/sites/chitrayaan-website-7122233/versions/d663c1afde117925"
+  }
+]
+[info] i  hosting[chitrayaan-website-7122233]: finalizing version... 
+[debug] [2025-08-06T14:03:29.795Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:29.795Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:29.795Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/d663c1afde117925 updateMask=status%2Cconfig
+[debug] [2025-08-06T14:03:29.795Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/d663c1afde117925 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-08-06T14:03:30.463Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/d663c1afde117925 200
+[debug] [2025-08-06T14:03:30.463Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/d663c1afde117925 {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/d663c1afde117925","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:03:25.932088Z","createUser":{"email":"ranit53222@gmail.com"},"finalizeTime":"2025-08-06T14:03:30.292576Z","finalizeUser":{"email":"ranit53222@gmail.com"}}
+[debug] [2025-08-06T14:03:30.463Z] [hosting] finalized version for chitrayaan-website-7122233:[object Object]
+[info] ✔  hosting[chitrayaan-website-7122233]: version finalized 
+[info] i  hosting[chitrayaan-website-7122233]: releasing new version... 
+[debug] [2025-08-06T14:03:30.464Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:30.464Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:03:30.464Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases versionName=projects%2F293195269146%2Fsites%2Fchitrayaan-website-7122233%2Fversions%2Fd663c1afde117925
+[debug] [2025-08-06T14:03:30.464Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {}
+[debug] [2025-08-06T14:03:31.229Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases 200
+[debug] [2025-08-06T14:03:31.229Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754489010445000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/d663c1afde117925","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:03:25.932088Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:03:30.292576Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:03:30.445Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[debug] [2025-08-06T14:03:31.229Z] [hosting] release: {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754489010445000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/d663c1afde117925","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:03:25.932088Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:03:30.292576Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:03:30.445Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[info] ✔  hosting[chitrayaan-website-7122233]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/chitrayaan-website-7122233/overview
+[info] Hosting URL: https://chitrayaan-website-7122233.web.app
+[debug] [2025-08-06T14:07:12.387Z] ----------------------------------------------------------------------
+[debug] [2025-08-06T14:07:12.392Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-08-06T14:07:12.393Z] CLI Version:   14.11.2
+[debug] [2025-08-06T14:07:12.393Z] Platform:      darwin
+[debug] [2025-08-06T14:07:12.393Z] Node Version:  v22.15.0
+[debug] [2025-08-06T14:07:12.393Z] Time:          Wed Aug 06 2025 19:37:12 GMT+0530 (India Standard Time)
+[debug] [2025-08-06T14:07:12.393Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-06T14:07:12.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-06T14:07:12.604Z] > authorizing via signed-in user (ranit53222@gmail.com)
+[debug] [2025-08-06T14:07:12.605Z] [iam] checking project chitrayaan-website-7122233 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-06T14:07:12.605Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:12.605Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:12.606Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions [none]
+[debug] [2025-08-06T14:07:12.606Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions x-goog-quota-user=projects/chitrayaan-website-7122233
+[debug] [2025-08-06T14:07:12.606Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:07:14.138Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions 200
+[debug] [2025-08-06T14:07:14.139Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:07:14.139Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:14.139Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:14.139Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 [none]
+[debug] [2025-08-06T14:07:14.714Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 200
+[debug] [2025-08-06T14:07:14.714Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 {"projectId":"chitrayaan-website-7122233","projectNumber":"293195269146","displayName":"Chitrayaan Website","name":"projects/chitrayaan-website-7122233","resources":{"hostingSite":"chitrayaan-website-7122233"},"state":"ACTIVE","etag":"1_907d3a86-ae4a-4f7f-90f4-4fa4b04519b4"}
+[info] 
+[info] === Deploying to 'chitrayaan-website-7122233'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-06T14:07:14.717Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:14.717Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:14.717Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions [none]
+[debug] [2025-08-06T14:07:14.717Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-06T14:07:16.319Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions 200
+[debug] [2025-08-06T14:07:16.319Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/255bd937e8379b62","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[chitrayaan-website-7122233]: beginning deploy... 
+[info] i  hosting[chitrayaan-website-7122233]: found 16 files in build 
+[debug] [2025-08-06T14:07:16.337Z] [hosting] uploading with 200 concurrency
+[debug] [2025-08-06T14:07:17.245Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:17.245Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:17.246Z] [hosting] hash cache [YnVpbGQ] stored for 16 files
+[debug] [2025-08-06T14:07:17.246Z] [hosting][hash queue][FINAL] {"max":904,"min":5,"avg":77.75,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":908}
+[debug] [2025-08-06T14:07:17.246Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/255bd937e8379b62:populateFiles [none]
+[debug] [2025-08-06T14:07:17.246Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/255bd937e8379b62:populateFiles {"files":{"/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/manifest.json":"4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","/asset-manifest.json":"6d2eb40e9bdde5cc1bc44f3b34fd1961d67d8d96a6829c1c1fadf89b06d9b71b","/index.html":"e131351aa88fbf029f423a87325038938c63aeee810691ea036074ed1a882cc3","/logo192.png":"f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150","/favicon.ico":"1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","/logo512.png":"2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","/static/js/453.670e15c7.chunk.js":"bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e","/static/js/453.670e15c7.chunk.js.map":"154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549","/static/js/main.9a529e8d.js.LICENSE.txt":"36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea","/static/css/main.6be200c5.css":"ebcd3f58a4b37838efa7c8445421febd2b4c2aba0b6eddd7d5158170e8c43858","/static/js/main.9a529e8d.js":"3f3942fb3d203e6b9ad57cee321611e58f6da6a7f9e0815f07809e0ca78cb88c","/static/css/main.6be200c5.css.map":"84e6d10315db3dc89afa1916e2d56de894147f70a8c2ad8783e2a1e8b321203d","/static/media/chitraYaanLogo.5ed36c41c6ebd210c36c.png":"53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31","/static/js/main.9a529e8d.js.map":"d9258dc04934041dad9df96a3c4820c8438da351172c5df3025c8e8c17c8e792","/static/media/back.ac7df313e510808a5397.mp4":"8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35"}}
+[debug] [2025-08-06T14:07:17.782Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/255bd937e8379b62:populateFiles 200
+[debug] [2025-08-06T14:07:17.782Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/255bd937e8379b62:populateFiles {"uploadRequiredHashes":["e131351aa88fbf029f423a87325038938c63aeee810691ea036074ed1a882cc3","6d2eb40e9bdde5cc1bc44f3b34fd1961d67d8d96a6829c1c1fadf89b06d9b71b"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/255bd937e8379b62/files"}
+[debug] [2025-08-06T14:07:17.783Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:17.783Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:17.783Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:17.783Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:17.783Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/255bd937e8379b62/files/e131351aa88fbf029f423a87325038938c63aeee810691ea036074ed1a882cc3 [none]
+[debug] [2025-08-06T14:07:17.783Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/255bd937e8379b62/files/e131351aa88fbf029f423a87325038938c63aeee810691ea036074ed1a882cc3 [stream]
+[debug] [2025-08-06T14:07:17.784Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/255bd937e8379b62/files/6d2eb40e9bdde5cc1bc44f3b34fd1961d67d8d96a6829c1c1fadf89b06d9b71b [none]
+[debug] [2025-08-06T14:07:17.784Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/255bd937e8379b62/files/6d2eb40e9bdde5cc1bc44f3b34fd1961d67d8d96a6829c1c1fadf89b06d9b71b [stream]
+[debug] [2025-08-06T14:07:17.784Z] [hosting][populate queue][FINAL] {"max":538,"min":538,"avg":538,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":539}
+[debug] [2025-08-06T14:07:17.784Z] [hosting] uploads queued: 2
+[info] i  hosting: uploading new files [0/2] (0%) 
+[debug] [2025-08-06T14:07:19.074Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/255bd937e8379b62/files/6d2eb40e9bdde5cc1bc44f3b34fd1961d67d8d96a6829c1c1fadf89b06d9b71b 200
+[debug] [2025-08-06T14:07:19.075Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/255bd937e8379b62/files/6d2eb40e9bdde5cc1bc44f3b34fd1961d67d8d96a6829c1c1fadf89b06d9b71b [stream]
+[debug] [2025-08-06T14:07:19.250Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/255bd937e8379b62/files/e131351aa88fbf029f423a87325038938c63aeee810691ea036074ed1a882cc3 200
+[debug] [2025-08-06T14:07:19.250Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/255bd937e8379b62/files/e131351aa88fbf029f423a87325038938c63aeee810691ea036074ed1a882cc3 [stream]
+[debug] [2025-08-06T14:07:19.250Z] [hosting][upload queue][FINAL] {"max":1467,"min":1292,"avg":1379.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1467}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[chitrayaan-website-7122233]: file upload complete 
+[debug] [2025-08-06T14:07:19.250Z] [hosting] deploy completed after 2927ms
+[debug] [2025-08-06T14:07:19.250Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "chitrayaan-website-7122233"
+    },
+    "version": "projects/293195269146/sites/chitrayaan-website-7122233/versions/255bd937e8379b62"
+  }
+]
+[info] i  hosting[chitrayaan-website-7122233]: finalizing version... 
+[debug] [2025-08-06T14:07:19.251Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:19.251Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:19.251Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/255bd937e8379b62 updateMask=status%2Cconfig
+[debug] [2025-08-06T14:07:19.251Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/255bd937e8379b62 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-08-06T14:07:19.958Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/255bd937e8379b62 200
+[debug] [2025-08-06T14:07:19.958Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/255bd937e8379b62 {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/255bd937e8379b62","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:07:15.824552Z","createUser":{"email":"ranit53222@gmail.com"},"finalizeTime":"2025-08-06T14:07:19.800784Z","finalizeUser":{"email":"ranit53222@gmail.com"}}
+[debug] [2025-08-06T14:07:19.958Z] [hosting] finalized version for chitrayaan-website-7122233:[object Object]
+[info] ✔  hosting[chitrayaan-website-7122233]: version finalized 
+[info] i  hosting[chitrayaan-website-7122233]: releasing new version... 
+[debug] [2025-08-06T14:07:19.958Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:19.958Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:07:19.958Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases versionName=projects%2F293195269146%2Fsites%2Fchitrayaan-website-7122233%2Fversions%2F255bd937e8379b62
+[debug] [2025-08-06T14:07:19.958Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {}
+[debug] [2025-08-06T14:07:20.497Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases 200
+[debug] [2025-08-06T14:07:20.497Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754489239722000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/255bd937e8379b62","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:07:15.824552Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:07:19.800784Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:07:19.722Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[debug] [2025-08-06T14:07:20.497Z] [hosting] release: {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754489239722000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/255bd937e8379b62","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:07:15.824552Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:07:19.800784Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:07:19.722Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[info] ✔  hosting[chitrayaan-website-7122233]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/chitrayaan-website-7122233/overview
+[info] Hosting URL: https://chitrayaan-website-7122233.web.app
+[debug] [2025-08-06T14:10:54.572Z] ----------------------------------------------------------------------
+[debug] [2025-08-06T14:10:54.575Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-08-06T14:10:54.576Z] CLI Version:   14.11.2
+[debug] [2025-08-06T14:10:54.576Z] Platform:      darwin
+[debug] [2025-08-06T14:10:54.576Z] Node Version:  v22.15.0
+[debug] [2025-08-06T14:10:54.576Z] Time:          Wed Aug 06 2025 19:40:54 GMT+0530 (India Standard Time)
+[debug] [2025-08-06T14:10:54.576Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-06T14:10:54.790Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-06T14:10:54.790Z] > authorizing via signed-in user (ranit53222@gmail.com)
+[debug] [2025-08-06T14:10:54.791Z] [iam] checking project chitrayaan-website-7122233 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-06T14:10:54.791Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:54.791Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:54.791Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions [none]
+[debug] [2025-08-06T14:10:54.791Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions x-goog-quota-user=projects/chitrayaan-website-7122233
+[debug] [2025-08-06T14:10:54.791Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:10:56.323Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions 200
+[debug] [2025-08-06T14:10:56.323Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:10:56.323Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:56.323Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:56.323Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 [none]
+[debug] [2025-08-06T14:10:56.845Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 200
+[debug] [2025-08-06T14:10:56.845Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 {"projectId":"chitrayaan-website-7122233","projectNumber":"293195269146","displayName":"Chitrayaan Website","name":"projects/chitrayaan-website-7122233","resources":{"hostingSite":"chitrayaan-website-7122233"},"state":"ACTIVE","etag":"1_907d3a86-ae4a-4f7f-90f4-4fa4b04519b4"}
+[info] 
+[info] === Deploying to 'chitrayaan-website-7122233'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-06T14:10:56.850Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:56.850Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:56.850Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions [none]
+[debug] [2025-08-06T14:10:56.850Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-06T14:10:58.455Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions 200
+[debug] [2025-08-06T14:10:58.456Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[chitrayaan-website-7122233]: beginning deploy... 
+[info] i  hosting[chitrayaan-website-7122233]: found 16 files in build 
+[debug] [2025-08-06T14:10:58.473Z] [hosting] uploading with 200 concurrency
+[debug] [2025-08-06T14:10:59.348Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.348Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.350Z] [hosting] hash cache [YnVpbGQ] stored for 16 files
+[debug] [2025-08-06T14:10:59.350Z] [hosting][hash queue][FINAL] {"max":872,"min":6,"avg":76.125,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":876}
+[debug] [2025-08-06T14:10:59.350Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce:populateFiles [none]
+[debug] [2025-08-06T14:10:59.350Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce:populateFiles {"files":{"/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/manifest.json":"4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","/index.html":"1fba7f02e703f4452ac597fb3712f3438400a40745c9742ccdcee57e1f5d4211","/asset-manifest.json":"9da8a431de8adbfaf45b9f6fa504fb039cf30c92027dec02606e9da38c503e56","/logo512.png":"2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","/favicon.ico":"1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","/logo192.png":"f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150","/static/js/main.d787d3f9.js.LICENSE.txt":"36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea","/static/js/453.670e15c7.chunk.js":"bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e","/static/js/453.670e15c7.chunk.js.map":"154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549","/static/css/main.bcc3a81e.css":"7c0bf6a4ae8861203ecdb83f96c414d0d58bffb04263e529c8f04f178a410374","/static/js/main.d787d3f9.js":"a2396ccc34d5a0ec9c5efead27fc8b94f44bbf4b955576237c0393e0e602220a","/static/css/main.bcc3a81e.css.map":"26b62479ba942b52fbaa92d35fdc28767c6b1615f55408e1116c85b5b27e1726","/static/media/chitraYaanLogo.5ed36c41c6ebd210c36c.png":"53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31","/static/js/main.d787d3f9.js.map":"7dc1fe418180a2fcd200b6009121b1aeed01693c95ed99b1a75b956332c5670d","/static/media/back.ac7df313e510808a5397.mp4":"8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35"}}
+[debug] [2025-08-06T14:10:59.868Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce:populateFiles 200
+[debug] [2025-08-06T14:10:59.868Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce:populateFiles {"uploadRequiredHashes":["26b62479ba942b52fbaa92d35fdc28767c6b1615f55408e1116c85b5b27e1726","7c0bf6a4ae8861203ecdb83f96c414d0d58bffb04263e529c8f04f178a410374","7dc1fe418180a2fcd200b6009121b1aeed01693c95ed99b1a75b956332c5670d","1fba7f02e703f4452ac597fb3712f3438400a40745c9742ccdcee57e1f5d4211","9da8a431de8adbfaf45b9f6fa504fb039cf30c92027dec02606e9da38c503e56","a2396ccc34d5a0ec9c5efead27fc8b94f44bbf4b955576237c0393e0e602220a"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files"}
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:10:59.869Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/26b62479ba942b52fbaa92d35fdc28767c6b1615f55408e1116c85b5b27e1726 [none]
+[debug] [2025-08-06T14:10:59.869Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/26b62479ba942b52fbaa92d35fdc28767c6b1615f55408e1116c85b5b27e1726 [stream]
+[debug] [2025-08-06T14:10:59.870Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/7c0bf6a4ae8861203ecdb83f96c414d0d58bffb04263e529c8f04f178a410374 [none]
+[debug] [2025-08-06T14:10:59.870Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/7c0bf6a4ae8861203ecdb83f96c414d0d58bffb04263e529c8f04f178a410374 [stream]
+[debug] [2025-08-06T14:10:59.870Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/7dc1fe418180a2fcd200b6009121b1aeed01693c95ed99b1a75b956332c5670d [none]
+[debug] [2025-08-06T14:10:59.870Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/7dc1fe418180a2fcd200b6009121b1aeed01693c95ed99b1a75b956332c5670d [stream]
+[debug] [2025-08-06T14:10:59.871Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/1fba7f02e703f4452ac597fb3712f3438400a40745c9742ccdcee57e1f5d4211 [none]
+[debug] [2025-08-06T14:10:59.871Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/1fba7f02e703f4452ac597fb3712f3438400a40745c9742ccdcee57e1f5d4211 [stream]
+[debug] [2025-08-06T14:10:59.871Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/9da8a431de8adbfaf45b9f6fa504fb039cf30c92027dec02606e9da38c503e56 [none]
+[debug] [2025-08-06T14:10:59.871Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/9da8a431de8adbfaf45b9f6fa504fb039cf30c92027dec02606e9da38c503e56 [stream]
+[debug] [2025-08-06T14:10:59.872Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/a2396ccc34d5a0ec9c5efead27fc8b94f44bbf4b955576237c0393e0e602220a [none]
+[debug] [2025-08-06T14:10:59.872Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/a2396ccc34d5a0ec9c5efead27fc8b94f44bbf4b955576237c0393e0e602220a [stream]
+[debug] [2025-08-06T14:10:59.873Z] [hosting][populate queue][FINAL] {"max":521,"min":521,"avg":521,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":525}
+[debug] [2025-08-06T14:10:59.873Z] [hosting] uploads queued: 6
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2025-08-06T14:11:01.492Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/9da8a431de8adbfaf45b9f6fa504fb039cf30c92027dec02606e9da38c503e56 200
+[debug] [2025-08-06T14:11:01.492Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/9da8a431de8adbfaf45b9f6fa504fb039cf30c92027dec02606e9da38c503e56 [stream]
+[debug] [2025-08-06T14:11:01.840Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/7dc1fe418180a2fcd200b6009121b1aeed01693c95ed99b1a75b956332c5670d 200
+[debug] [2025-08-06T14:11:01.840Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/7dc1fe418180a2fcd200b6009121b1aeed01693c95ed99b1a75b956332c5670d [stream]
+[debug] [2025-08-06T14:11:02.107Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/a2396ccc34d5a0ec9c5efead27fc8b94f44bbf4b955576237c0393e0e602220a 200
+[debug] [2025-08-06T14:11:02.108Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/a2396ccc34d5a0ec9c5efead27fc8b94f44bbf4b955576237c0393e0e602220a [stream]
+[debug] [2025-08-06T14:11:02.108Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/26b62479ba942b52fbaa92d35fdc28767c6b1615f55408e1116c85b5b27e1726 200
+[debug] [2025-08-06T14:11:02.108Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/26b62479ba942b52fbaa92d35fdc28767c6b1615f55408e1116c85b5b27e1726 [stream]
+[debug] [2025-08-06T14:11:02.109Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/1fba7f02e703f4452ac597fb3712f3438400a40745c9742ccdcee57e1f5d4211 200
+[debug] [2025-08-06T14:11:02.109Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/1fba7f02e703f4452ac597fb3712f3438400a40745c9742ccdcee57e1f5d4211 [stream]
+[debug] [2025-08-06T14:11:02.109Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/7c0bf6a4ae8861203ecdb83f96c414d0d58bffb04263e529c8f04f178a410374 200
+[debug] [2025-08-06T14:11:02.109Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce/files/7c0bf6a4ae8861203ecdb83f96c414d0d58bffb04263e529c8f04f178a410374 [stream]
+[debug] [2025-08-06T14:11:02.109Z] [hosting][upload queue][FINAL] {"max":2240,"min":1623,"avg":2092.1666666666665,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":2241}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[chitrayaan-website-7122233]: file upload complete 
+[debug] [2025-08-06T14:11:02.110Z] [hosting] deploy completed after 3651ms
+[debug] [2025-08-06T14:11:02.110Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "chitrayaan-website-7122233"
+    },
+    "version": "projects/293195269146/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce"
+  }
+]
+[info] i  hosting[chitrayaan-website-7122233]: finalizing version... 
+[debug] [2025-08-06T14:11:02.110Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:11:02.110Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:11:02.111Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce updateMask=status%2Cconfig
+[debug] [2025-08-06T14:11:02.111Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-08-06T14:11:02.770Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce 200
+[debug] [2025-08-06T14:11:02.770Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:10:57.933684Z","createUser":{"email":"ranit53222@gmail.com"},"finalizeTime":"2025-08-06T14:11:02.595370Z","finalizeUser":{"email":"ranit53222@gmail.com"}}
+[debug] [2025-08-06T14:11:02.770Z] [hosting] finalized version for chitrayaan-website-7122233:[object Object]
+[info] ✔  hosting[chitrayaan-website-7122233]: version finalized 
+[info] i  hosting[chitrayaan-website-7122233]: releasing new version... 
+[debug] [2025-08-06T14:11:02.770Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:11:02.770Z] Checked if tokens are valid: true, expires at: 1754491660167
+[debug] [2025-08-06T14:11:02.770Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases versionName=projects%2F293195269146%2Fsites%2Fchitrayaan-website-7122233%2Fversions%2F09dc1133896b18ce
+[debug] [2025-08-06T14:11:02.770Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {}
+[debug] [2025-08-06T14:11:03.552Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases 200
+[debug] [2025-08-06T14:11:03.552Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754489462746000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:10:57.933684Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:11:02.595370Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:11:02.746Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[debug] [2025-08-06T14:11:03.552Z] [hosting] release: {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754489462746000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/09dc1133896b18ce","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:10:57.933684Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:11:02.595370Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:11:02.746Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[info] ✔  hosting[chitrayaan-website-7122233]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/chitrayaan-website-7122233/overview
+[info] Hosting URL: https://chitrayaan-website-7122233.web.app
+[debug] [2025-08-06T14:45:09.699Z] ----------------------------------------------------------------------
+[debug] [2025-08-06T14:45:09.707Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-08-06T14:45:09.707Z] CLI Version:   14.11.2
+[debug] [2025-08-06T14:45:09.707Z] Platform:      darwin
+[debug] [2025-08-06T14:45:09.707Z] Node Version:  v22.15.0
+[debug] [2025-08-06T14:45:09.707Z] Time:          Wed Aug 06 2025 20:15:09 GMT+0530 (India Standard Time)
+[debug] [2025-08-06T14:45:09.707Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-06T14:45:09.842Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-06T14:45:09.859Z] > authorizing via signed-in user (ranit53222@gmail.com)
+[debug] [2025-08-06T14:45:09.860Z] [iam] checking project chitrayaan-website-7122233 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-06T14:45:09.861Z] Checked if tokens are valid: false, expires at: 1754491660167
+[debug] [2025-08-06T14:45:09.861Z] Checked if tokens are valid: false, expires at: 1754491660167
+[debug] [2025-08-06T14:45:09.861Z] > refreshing access token with scopes: []
+[debug] [2025-08-06T14:45:09.862Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-06T14:45:09.862Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-06T14:45:10.152Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-08-06T14:45:10.152Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-06T14:45:10.161Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions [none]
+[debug] [2025-08-06T14:45:10.161Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions x-goog-quota-user=projects/chitrayaan-website-7122233
+[debug] [2025-08-06T14:45:10.161Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:45:11.687Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions 200
+[debug] [2025-08-06T14:45:11.687Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:45:11.687Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:11.687Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:11.687Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 [none]
+[debug] [2025-08-06T14:45:12.206Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 200
+[debug] [2025-08-06T14:45:12.208Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 {"projectId":"chitrayaan-website-7122233","projectNumber":"293195269146","displayName":"Chitrayaan Website","name":"projects/chitrayaan-website-7122233","resources":{"hostingSite":"chitrayaan-website-7122233"},"state":"ACTIVE","etag":"1_907d3a86-ae4a-4f7f-90f4-4fa4b04519b4"}
+[info] 
+[info] === Deploying to 'chitrayaan-website-7122233'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-06T14:45:12.213Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:12.213Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:12.213Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions [none]
+[debug] [2025-08-06T14:45:12.213Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-06T14:45:13.978Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions 200
+[debug] [2025-08-06T14:45:13.979Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/a213cb5994bee360","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[chitrayaan-website-7122233]: beginning deploy... 
+[info] i  hosting[chitrayaan-website-7122233]: found 17 files in build 
+[debug] [2025-08-06T14:45:13.997Z] [hosting] uploading with 200 concurrency
+[debug] [2025-08-06T14:45:14.871Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:14.871Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:14.872Z] [hosting] hash cache [YnVpbGQ] stored for 17 files
+[debug] [2025-08-06T14:45:14.872Z] [hosting][hash queue][FINAL] {"max":872,"min":6,"avg":79.82352941176471,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":874}
+[debug] [2025-08-06T14:45:14.872Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/a213cb5994bee360:populateFiles [none]
+[debug] [2025-08-06T14:45:14.872Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/a213cb5994bee360:populateFiles {"files":{"/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/manifest.json":"4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","/logo512.png":"2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","/index.html":"00a3cd39d4c06df0808cf8481a58286bc0276871a9702ae4a5e52a99ba2b1d8e","/favicon.ico":"1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","/asset-manifest.json":"3f0b1952494ff3f0e4d8502d10b5557d3a79400dede79ada5f890708eb110845","/static/js/main.d787d3f9.js.LICENSE.txt":"36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea","/static/js/453.670e15c7.chunk.js":"bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e","/static/js/453.670e15c7.chunk.js.map":"154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549","/logo192.png":"f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150","/static/css/main.5e8cb9cf.css":"1bcf26cf310c911436d78b68f48b9190d6661c4d986e71008ce6cbb0ee42b4e8","/static/css/main.5e8cb9cf.css.map":"8f50ad6af4d50ed782b27a2267abcbe258ef69f80c5b66e29d3c1ee81c9688b4","/static/js/main.d787d3f9.js":"a2396ccc34d5a0ec9c5efead27fc8b94f44bbf4b955576237c0393e0e602220a","/static/media/chitraYaanLogo.5ed36c41c6ebd210c36c.png":"53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31","/static/media/iamge.349ef384c5f29aaf36f3.png":"8442411bce78c795a9baa0bf9106774a057e7e49983206dd1d1c7f6d91eda9ce","/static/js/main.d787d3f9.js.map":"7dc1fe418180a2fcd200b6009121b1aeed01693c95ed99b1a75b956332c5670d","/static/media/back.ac7df313e510808a5397.mp4":"8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35"}}
+[debug] [2025-08-06T14:45:15.412Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/a213cb5994bee360:populateFiles 200
+[debug] [2025-08-06T14:45:15.412Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/a213cb5994bee360:populateFiles {"uploadRequiredHashes":["8f50ad6af4d50ed782b27a2267abcbe258ef69f80c5b66e29d3c1ee81c9688b4","3f0b1952494ff3f0e4d8502d10b5557d3a79400dede79ada5f890708eb110845","00a3cd39d4c06df0808cf8481a58286bc0276871a9702ae4a5e52a99ba2b1d8e","8442411bce78c795a9baa0bf9106774a057e7e49983206dd1d1c7f6d91eda9ce","1bcf26cf310c911436d78b68f48b9190d6661c4d986e71008ce6cbb0ee42b4e8"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files"}
+[debug] [2025-08-06T14:45:15.412Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:15.413Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/8f50ad6af4d50ed782b27a2267abcbe258ef69f80c5b66e29d3c1ee81c9688b4 [none]
+[debug] [2025-08-06T14:45:15.413Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/8f50ad6af4d50ed782b27a2267abcbe258ef69f80c5b66e29d3c1ee81c9688b4 [stream]
+[debug] [2025-08-06T14:45:15.414Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/3f0b1952494ff3f0e4d8502d10b5557d3a79400dede79ada5f890708eb110845 [none]
+[debug] [2025-08-06T14:45:15.414Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/3f0b1952494ff3f0e4d8502d10b5557d3a79400dede79ada5f890708eb110845 [stream]
+[debug] [2025-08-06T14:45:15.414Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/00a3cd39d4c06df0808cf8481a58286bc0276871a9702ae4a5e52a99ba2b1d8e [none]
+[debug] [2025-08-06T14:45:15.414Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/00a3cd39d4c06df0808cf8481a58286bc0276871a9702ae4a5e52a99ba2b1d8e [stream]
+[debug] [2025-08-06T14:45:15.415Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/8442411bce78c795a9baa0bf9106774a057e7e49983206dd1d1c7f6d91eda9ce [none]
+[debug] [2025-08-06T14:45:15.415Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/8442411bce78c795a9baa0bf9106774a057e7e49983206dd1d1c7f6d91eda9ce [stream]
+[debug] [2025-08-06T14:45:15.416Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/1bcf26cf310c911436d78b68f48b9190d6661c4d986e71008ce6cbb0ee42b4e8 [none]
+[debug] [2025-08-06T14:45:15.416Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/1bcf26cf310c911436d78b68f48b9190d6661c4d986e71008ce6cbb0ee42b4e8 [stream]
+[debug] [2025-08-06T14:45:15.417Z] [hosting][populate queue][FINAL] {"max":542,"min":542,"avg":542,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":546}
+[debug] [2025-08-06T14:45:15.417Z] [hosting] uploads queued: 5
+[info] i  hosting: uploading new files [0/5] (0%) 
+[debug] [2025-08-06T14:45:16.825Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/1bcf26cf310c911436d78b68f48b9190d6661c4d986e71008ce6cbb0ee42b4e8 200
+[debug] [2025-08-06T14:45:16.825Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/1bcf26cf310c911436d78b68f48b9190d6661c4d986e71008ce6cbb0ee42b4e8 [stream]
+[debug] [2025-08-06T14:45:16.861Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/00a3cd39d4c06df0808cf8481a58286bc0276871a9702ae4a5e52a99ba2b1d8e 200
+[debug] [2025-08-06T14:45:16.861Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/00a3cd39d4c06df0808cf8481a58286bc0276871a9702ae4a5e52a99ba2b1d8e [stream]
+[debug] [2025-08-06T14:45:16.927Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/3f0b1952494ff3f0e4d8502d10b5557d3a79400dede79ada5f890708eb110845 200
+[debug] [2025-08-06T14:45:16.927Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/3f0b1952494ff3f0e4d8502d10b5557d3a79400dede79ada5f890708eb110845 [stream]
+[debug] [2025-08-06T14:45:17.037Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/8f50ad6af4d50ed782b27a2267abcbe258ef69f80c5b66e29d3c1ee81c9688b4 200
+[debug] [2025-08-06T14:45:17.037Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/8f50ad6af4d50ed782b27a2267abcbe258ef69f80c5b66e29d3c1ee81c9688b4 [stream]
+[debug] [2025-08-06T14:45:17.883Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/8442411bce78c795a9baa0bf9106774a057e7e49983206dd1d1c7f6d91eda9ce 200
+[debug] [2025-08-06T14:45:17.883Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/a213cb5994bee360/files/8442411bce78c795a9baa0bf9106774a057e7e49983206dd1d1c7f6d91eda9ce [stream]
+[debug] [2025-08-06T14:45:17.883Z] [hosting][upload queue][FINAL] {"max":2470,"min":1412,"avg":1693.8,"active":0,"complete":5,"success":5,"errored":0,"retried":0,"total":5,"elapsed":2471}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[chitrayaan-website-7122233]: file upload complete 
+[debug] [2025-08-06T14:45:17.884Z] [hosting] deploy completed after 3901ms
+[debug] [2025-08-06T14:45:17.884Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "chitrayaan-website-7122233"
+    },
+    "version": "projects/293195269146/sites/chitrayaan-website-7122233/versions/a213cb5994bee360"
+  }
+]
+[info] i  hosting[chitrayaan-website-7122233]: finalizing version... 
+[debug] [2025-08-06T14:45:17.884Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:17.884Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:17.885Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/a213cb5994bee360 updateMask=status%2Cconfig
+[debug] [2025-08-06T14:45:17.885Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/a213cb5994bee360 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-08-06T14:45:18.548Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/a213cb5994bee360 200
+[debug] [2025-08-06T14:45:18.548Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/a213cb5994bee360 {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/a213cb5994bee360","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:45:13.444570Z","createUser":{"email":"ranit53222@gmail.com"},"finalizeTime":"2025-08-06T14:45:18.387102Z","finalizeUser":{"email":"ranit53222@gmail.com"}}
+[debug] [2025-08-06T14:45:18.548Z] [hosting] finalized version for chitrayaan-website-7122233:[object Object]
+[info] ✔  hosting[chitrayaan-website-7122233]: version finalized 
+[info] i  hosting[chitrayaan-website-7122233]: releasing new version... 
+[debug] [2025-08-06T14:45:18.548Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:18.548Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:45:18.548Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases versionName=projects%2F293195269146%2Fsites%2Fchitrayaan-website-7122233%2Fversions%2Fa213cb5994bee360
+[debug] [2025-08-06T14:45:18.548Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {}
+[debug] [2025-08-06T14:45:19.540Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases 200
+[debug] [2025-08-06T14:45:19.540Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754491518640000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/a213cb5994bee360","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:45:13.444570Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:45:18.387102Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:45:18.640Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[debug] [2025-08-06T14:45:19.541Z] [hosting] release: {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754491518640000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/a213cb5994bee360","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:45:13.444570Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:45:18.387102Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:45:18.640Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[info] ✔  hosting[chitrayaan-website-7122233]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/chitrayaan-website-7122233/overview
+[info] Hosting URL: https://chitrayaan-website-7122233.web.app
+[debug] [2025-08-06T14:50:54.977Z] ----------------------------------------------------------------------
+[debug] [2025-08-06T14:50:54.978Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-08-06T14:50:54.978Z] CLI Version:   14.11.2
+[debug] [2025-08-06T14:50:54.978Z] Platform:      darwin
+[debug] [2025-08-06T14:50:54.978Z] Node Version:  v22.15.0
+[debug] [2025-08-06T14:50:54.979Z] Time:          Wed Aug 06 2025 20:20:54 GMT+0530 (India Standard Time)
+[debug] [2025-08-06T14:50:54.979Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-06T14:50:55.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-06T14:50:55.166Z] > authorizing via signed-in user (ranit53222@gmail.com)
+[debug] [2025-08-06T14:50:55.166Z] [iam] checking project chitrayaan-website-7122233 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-06T14:50:55.166Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:50:55.166Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:50:55.167Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions [none]
+[debug] [2025-08-06T14:50:55.167Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions x-goog-quota-user=projects/chitrayaan-website-7122233
+[debug] [2025-08-06T14:50:55.167Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:50:56.724Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions 200
+[debug] [2025-08-06T14:50:56.724Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T14:50:56.724Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:50:56.724Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:50:56.724Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 [none]
+[debug] [2025-08-06T14:50:57.222Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 200
+[debug] [2025-08-06T14:50:57.222Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 {"projectId":"chitrayaan-website-7122233","projectNumber":"293195269146","displayName":"Chitrayaan Website","name":"projects/chitrayaan-website-7122233","resources":{"hostingSite":"chitrayaan-website-7122233"},"state":"ACTIVE","etag":"1_907d3a86-ae4a-4f7f-90f4-4fa4b04519b4"}
+[info] 
+[info] === Deploying to 'chitrayaan-website-7122233'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-06T14:50:57.224Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:50:57.224Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:50:57.224Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions [none]
+[debug] [2025-08-06T14:50:57.224Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-06T14:50:58.783Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions 200
+[debug] [2025-08-06T14:50:58.783Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[chitrayaan-website-7122233]: beginning deploy... 
+[info] i  hosting[chitrayaan-website-7122233]: found 17 files in build 
+[debug] [2025-08-06T14:50:58.791Z] [hosting] uploading with 200 concurrency
+[debug] [2025-08-06T14:50:59.688Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:50:59.688Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:50:59.690Z] [hosting] hash cache [YnVpbGQ] stored for 17 files
+[debug] [2025-08-06T14:50:59.690Z] [hosting][hash queue][FINAL] {"max":894,"min":4,"avg":81.23529411764706,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":898}
+[debug] [2025-08-06T14:50:59.690Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39:populateFiles [none]
+[debug] [2025-08-06T14:50:59.690Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39:populateFiles {"files":{"/manifest.json":"4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/index.html":"ee301fd698da58a7645a3e4286e8077cfced42331458ecd1f76df0a290470863","/asset-manifest.json":"a27edc8d116310d181dd137ba6515d736907f7cf48bc210879dc8155102b73a4","/logo192.png":"f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150","/favicon.ico":"1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","/static/js/main.d787d3f9.js.LICENSE.txt":"36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea","/logo512.png":"2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","/static/js/453.670e15c7.chunk.js":"bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e","/static/js/453.670e15c7.chunk.js.map":"154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549","/static/css/main.c3304623.css":"02154dc6917f464dbb11cb69677afd763067a581ab0f3146148cd7083fde2edb","/static/js/main.d787d3f9.js":"a2396ccc34d5a0ec9c5efead27fc8b94f44bbf4b955576237c0393e0e602220a","/static/css/main.c3304623.css.map":"685f3bb89fa1f2d26a8757680dc551349f5a0bf3f5d6f3e02955d1a0aad71e75","/static/media/chitraYaanLogo.5ed36c41c6ebd210c36c.png":"53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31","/static/media/iamge.349ef384c5f29aaf36f3.png":"8442411bce78c795a9baa0bf9106774a057e7e49983206dd1d1c7f6d91eda9ce","/static/js/main.d787d3f9.js.map":"7dc1fe418180a2fcd200b6009121b1aeed01693c95ed99b1a75b956332c5670d","/static/media/back.ac7df313e510808a5397.mp4":"8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35"}}
+[debug] [2025-08-06T14:51:00.211Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39:populateFiles 200
+[debug] [2025-08-06T14:51:00.211Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39:populateFiles {"uploadRequiredHashes":["a27edc8d116310d181dd137ba6515d736907f7cf48bc210879dc8155102b73a4","02154dc6917f464dbb11cb69677afd763067a581ab0f3146148cd7083fde2edb","ee301fd698da58a7645a3e4286e8077cfced42331458ecd1f76df0a290470863","685f3bb89fa1f2d26a8757680dc551349f5a0bf3f5d6f3e02955d1a0aad71e75"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files"}
+[debug] [2025-08-06T14:51:00.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:00.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:00.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:00.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:00.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:00.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:00.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:00.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:00.211Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/a27edc8d116310d181dd137ba6515d736907f7cf48bc210879dc8155102b73a4 [none]
+[debug] [2025-08-06T14:51:00.211Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/a27edc8d116310d181dd137ba6515d736907f7cf48bc210879dc8155102b73a4 [stream]
+[debug] [2025-08-06T14:51:00.212Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/02154dc6917f464dbb11cb69677afd763067a581ab0f3146148cd7083fde2edb [none]
+[debug] [2025-08-06T14:51:00.212Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/02154dc6917f464dbb11cb69677afd763067a581ab0f3146148cd7083fde2edb [stream]
+[debug] [2025-08-06T14:51:00.213Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/ee301fd698da58a7645a3e4286e8077cfced42331458ecd1f76df0a290470863 [none]
+[debug] [2025-08-06T14:51:00.213Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/ee301fd698da58a7645a3e4286e8077cfced42331458ecd1f76df0a290470863 [stream]
+[debug] [2025-08-06T14:51:00.213Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/685f3bb89fa1f2d26a8757680dc551349f5a0bf3f5d6f3e02955d1a0aad71e75 [none]
+[debug] [2025-08-06T14:51:00.213Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/685f3bb89fa1f2d26a8757680dc551349f5a0bf3f5d6f3e02955d1a0aad71e75 [stream]
+[debug] [2025-08-06T14:51:00.214Z] [hosting][populate queue][FINAL] {"max":523,"min":523,"avg":523,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":526}
+[debug] [2025-08-06T14:51:00.214Z] [hosting] uploads queued: 4
+[info] i  hosting: uploading new files [0/4] (0%) 
+[debug] [2025-08-06T14:51:01.537Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/02154dc6917f464dbb11cb69677afd763067a581ab0f3146148cd7083fde2edb 200
+[debug] [2025-08-06T14:51:01.537Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/02154dc6917f464dbb11cb69677afd763067a581ab0f3146148cd7083fde2edb [stream]
+[debug] [2025-08-06T14:51:01.678Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/a27edc8d116310d181dd137ba6515d736907f7cf48bc210879dc8155102b73a4 200
+[debug] [2025-08-06T14:51:01.678Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/a27edc8d116310d181dd137ba6515d736907f7cf48bc210879dc8155102b73a4 [stream]
+[debug] [2025-08-06T14:51:01.748Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/ee301fd698da58a7645a3e4286e8077cfced42331458ecd1f76df0a290470863 200
+[debug] [2025-08-06T14:51:01.749Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/ee301fd698da58a7645a3e4286e8077cfced42331458ecd1f76df0a290470863 [stream]
+[debug] [2025-08-06T14:51:01.803Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/685f3bb89fa1f2d26a8757680dc551349f5a0bf3f5d6f3e02955d1a0aad71e75 200
+[debug] [2025-08-06T14:51:01.803Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39/files/685f3bb89fa1f2d26a8757680dc551349f5a0bf3f5d6f3e02955d1a0aad71e75 [stream]
+[debug] [2025-08-06T14:51:01.804Z] [hosting][upload queue][FINAL] {"max":1592,"min":1326,"avg":1480.75,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":1593}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[chitrayaan-website-7122233]: file upload complete 
+[debug] [2025-08-06T14:51:01.804Z] [hosting] deploy completed after 3020ms
+[debug] [2025-08-06T14:51:01.804Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "chitrayaan-website-7122233"
+    },
+    "version": "projects/293195269146/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39"
+  }
+]
+[info] i  hosting[chitrayaan-website-7122233]: finalizing version... 
+[debug] [2025-08-06T14:51:01.804Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:01.804Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:01.805Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39 updateMask=status%2Cconfig
+[debug] [2025-08-06T14:51:01.805Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-08-06T14:51:02.582Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39 200
+[debug] [2025-08-06T14:51:02.582Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39 {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:50:58.271038Z","createUser":{"email":"ranit53222@gmail.com"},"finalizeTime":"2025-08-06T14:51:02.415345Z","finalizeUser":{"email":"ranit53222@gmail.com"}}
+[debug] [2025-08-06T14:51:02.582Z] [hosting] finalized version for chitrayaan-website-7122233:[object Object]
+[info] ✔  hosting[chitrayaan-website-7122233]: version finalized 
+[info] i  hosting[chitrayaan-website-7122233]: releasing new version... 
+[debug] [2025-08-06T14:51:02.582Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:02.582Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T14:51:02.582Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases versionName=projects%2F293195269146%2Fsites%2Fchitrayaan-website-7122233%2Fversions%2Fea36f8c4d14dce39
+[debug] [2025-08-06T14:51:02.582Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {}
+[debug] [2025-08-06T14:51:03.168Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases 200
+[debug] [2025-08-06T14:51:03.168Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754491862387000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:50:58.271038Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:51:02.415345Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:51:02.387Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[debug] [2025-08-06T14:51:03.168Z] [hosting] release: {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754491862387000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/ea36f8c4d14dce39","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T14:50:58.271038Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T14:51:02.415345Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T14:51:02.387Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[info] ✔  hosting[chitrayaan-website-7122233]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/chitrayaan-website-7122233/overview
+[info] Hosting URL: https://chitrayaan-website-7122233.web.app
+[debug] [2025-08-06T15:00:20.674Z] ----------------------------------------------------------------------
+[debug] [2025-08-06T15:00:20.682Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-08-06T15:00:20.683Z] CLI Version:   14.11.2
+[debug] [2025-08-06T15:00:20.683Z] Platform:      darwin
+[debug] [2025-08-06T15:00:20.683Z] Node Version:  v22.15.0
+[debug] [2025-08-06T15:00:20.683Z] Time:          Wed Aug 06 2025 20:30:20 GMT+0530 (India Standard Time)
+[debug] [2025-08-06T15:00:20.683Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-06T15:00:20.904Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-06T15:00:20.905Z] > authorizing via signed-in user (ranit53222@gmail.com)
+[debug] [2025-08-06T15:00:20.905Z] [iam] checking project chitrayaan-website-7122233 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-06T15:00:20.905Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:20.905Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:20.906Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions [none]
+[debug] [2025-08-06T15:00:20.906Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions x-goog-quota-user=projects/chitrayaan-website-7122233
+[debug] [2025-08-06T15:00:20.906Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T15:00:22.480Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions 200
+[debug] [2025-08-06T15:00:22.481Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T15:00:22.481Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:22.481Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:22.481Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 [none]
+[debug] [2025-08-06T15:00:22.989Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 200
+[debug] [2025-08-06T15:00:22.990Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 {"projectId":"chitrayaan-website-7122233","projectNumber":"293195269146","displayName":"Chitrayaan Website","name":"projects/chitrayaan-website-7122233","resources":{"hostingSite":"chitrayaan-website-7122233"},"state":"ACTIVE","etag":"1_907d3a86-ae4a-4f7f-90f4-4fa4b04519b4"}
+[info] 
+[info] === Deploying to 'chitrayaan-website-7122233'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-06T15:00:22.993Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:22.993Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:22.993Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions [none]
+[debug] [2025-08-06T15:00:22.993Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-06T15:00:24.737Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions 200
+[debug] [2025-08-06T15:00:24.737Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[chitrayaan-website-7122233]: beginning deploy... 
+[info] i  hosting[chitrayaan-website-7122233]: found 17 files in build 
+[debug] [2025-08-06T15:00:24.745Z] [hosting] uploading with 200 concurrency
+[debug] [2025-08-06T15:00:25.597Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:25.597Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:25.597Z] [hosting] hash cache [YnVpbGQ] stored for 17 files
+[debug] [2025-08-06T15:00:25.598Z] [hosting][hash queue][FINAL] {"max":849,"min":5,"avg":80.70588235294117,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":852}
+[debug] [2025-08-06T15:00:25.598Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d:populateFiles [none]
+[debug] [2025-08-06T15:00:25.598Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d:populateFiles {"files":{"/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/manifest.json":"4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","/index.html":"84baeb6f325fdf964e76b53011ee94f75a7a0ec56f0a0924ef2417950bb4529e","/asset-manifest.json":"ac8546403a54da6e94aae51fe4897072dd8ffedca9af00dde22321690ef8abc2","/favicon.ico":"1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","/logo192.png":"f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150","/static/js/main.bed9760c.js.LICENSE.txt":"36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea","/logo512.png":"2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","/static/js/453.670e15c7.chunk.js.map":"154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549","/static/js/453.670e15c7.chunk.js":"bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e","/static/css/main.c3304623.css":"02154dc6917f464dbb11cb69677afd763067a581ab0f3146148cd7083fde2edb","/static/css/main.c3304623.css.map":"685f3bb89fa1f2d26a8757680dc551349f5a0bf3f5d6f3e02955d1a0aad71e75","/static/js/main.bed9760c.js":"df3c41e8c756f27b87516a3100a7e459bfd35d6b0e23f1756839cd85dd0dfed5","/static/media/chitraYaanLogo.5ed36c41c6ebd210c36c.png":"53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31","/static/media/iamge.349ef384c5f29aaf36f3.png":"8442411bce78c795a9baa0bf9106774a057e7e49983206dd1d1c7f6d91eda9ce","/static/js/main.bed9760c.js.map":"744f10fefa1cad4b98d2e6ad86cd3fef8472cb14ffddc738d2d478d2aab2cd21","/static/media/back.ac7df313e510808a5397.mp4":"8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35"}}
+[debug] [2025-08-06T15:00:26.116Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d:populateFiles 200
+[debug] [2025-08-06T15:00:26.116Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d:populateFiles {"uploadRequiredHashes":["ac8546403a54da6e94aae51fe4897072dd8ffedca9af00dde22321690ef8abc2","df3c41e8c756f27b87516a3100a7e459bfd35d6b0e23f1756839cd85dd0dfed5","744f10fefa1cad4b98d2e6ad86cd3fef8472cb14ffddc738d2d478d2aab2cd21","84baeb6f325fdf964e76b53011ee94f75a7a0ec56f0a0924ef2417950bb4529e"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files"}
+[debug] [2025-08-06T15:00:26.116Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:26.116Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:26.116Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:26.116Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:26.116Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:26.116Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:26.116Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:26.116Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:26.116Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/ac8546403a54da6e94aae51fe4897072dd8ffedca9af00dde22321690ef8abc2 [none]
+[debug] [2025-08-06T15:00:26.116Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/ac8546403a54da6e94aae51fe4897072dd8ffedca9af00dde22321690ef8abc2 [stream]
+[debug] [2025-08-06T15:00:26.117Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/df3c41e8c756f27b87516a3100a7e459bfd35d6b0e23f1756839cd85dd0dfed5 [none]
+[debug] [2025-08-06T15:00:26.117Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/df3c41e8c756f27b87516a3100a7e459bfd35d6b0e23f1756839cd85dd0dfed5 [stream]
+[debug] [2025-08-06T15:00:26.118Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/744f10fefa1cad4b98d2e6ad86cd3fef8472cb14ffddc738d2d478d2aab2cd21 [none]
+[debug] [2025-08-06T15:00:26.118Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/744f10fefa1cad4b98d2e6ad86cd3fef8472cb14ffddc738d2d478d2aab2cd21 [stream]
+[debug] [2025-08-06T15:00:26.118Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/84baeb6f325fdf964e76b53011ee94f75a7a0ec56f0a0924ef2417950bb4529e [none]
+[debug] [2025-08-06T15:00:26.118Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/84baeb6f325fdf964e76b53011ee94f75a7a0ec56f0a0924ef2417950bb4529e [stream]
+[debug] [2025-08-06T15:00:26.119Z] [hosting][populate queue][FINAL] {"max":520,"min":520,"avg":520,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":523}
+[debug] [2025-08-06T15:00:26.119Z] [hosting] uploads queued: 4
+[info] i  hosting: uploading new files [0/4] (0%) 
+[debug] [2025-08-06T15:00:27.613Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/84baeb6f325fdf964e76b53011ee94f75a7a0ec56f0a0924ef2417950bb4529e 200
+[debug] [2025-08-06T15:00:27.613Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/84baeb6f325fdf964e76b53011ee94f75a7a0ec56f0a0924ef2417950bb4529e [stream]
+[debug] [2025-08-06T15:00:27.663Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/ac8546403a54da6e94aae51fe4897072dd8ffedca9af00dde22321690ef8abc2 200
+[debug] [2025-08-06T15:00:27.663Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/ac8546403a54da6e94aae51fe4897072dd8ffedca9af00dde22321690ef8abc2 [stream]
+[debug] [2025-08-06T15:00:27.700Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/df3c41e8c756f27b87516a3100a7e459bfd35d6b0e23f1756839cd85dd0dfed5 200
+[debug] [2025-08-06T15:00:27.700Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/df3c41e8c756f27b87516a3100a7e459bfd35d6b0e23f1756839cd85dd0dfed5 [stream]
+[info] i  hosting: uploading new files [3/4] (75%) 
+[debug] [2025-08-06T15:00:29.060Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/744f10fefa1cad4b98d2e6ad86cd3fef8472cb14ffddc738d2d478d2aab2cd21 200
+[debug] [2025-08-06T15:00:29.061Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d/files/744f10fefa1cad4b98d2e6ad86cd3fef8472cb14ffddc738d2d478d2aab2cd21 [stream]
+[debug] [2025-08-06T15:00:29.061Z] [hosting][upload queue][FINAL] {"max":2945,"min":1497,"avg":1893.25,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":2945}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[chitrayaan-website-7122233]: file upload complete 
+[debug] [2025-08-06T15:00:29.061Z] [hosting] deploy completed after 4323ms
+[debug] [2025-08-06T15:00:29.061Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "chitrayaan-website-7122233"
+    },
+    "version": "projects/293195269146/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d"
+  }
+]
+[info] i  hosting[chitrayaan-website-7122233]: finalizing version... 
+[debug] [2025-08-06T15:00:29.062Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:29.062Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:29.062Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d updateMask=status%2Cconfig
+[debug] [2025-08-06T15:00:29.062Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-08-06T15:00:29.576Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d 200
+[debug] [2025-08-06T15:00:29.576Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T15:00:24.141729Z","createUser":{"email":"ranit53222@gmail.com"},"finalizeTime":"2025-08-06T15:00:29.400432Z","finalizeUser":{"email":"ranit53222@gmail.com"}}
+[debug] [2025-08-06T15:00:29.577Z] [hosting] finalized version for chitrayaan-website-7122233:[object Object]
+[info] ✔  hosting[chitrayaan-website-7122233]: version finalized 
+[info] i  hosting[chitrayaan-website-7122233]: releasing new version... 
+[debug] [2025-08-06T15:00:29.577Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:29.577Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:00:29.577Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases versionName=projects%2F293195269146%2Fsites%2Fchitrayaan-website-7122233%2Fversions%2F7a6e17d0f98e823d
+[debug] [2025-08-06T15:00:29.577Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {}
+[debug] [2025-08-06T15:00:30.350Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases 200
+[debug] [2025-08-06T15:00:30.350Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754492429558000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T15:00:24.141729Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T15:00:29.400432Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T15:00:29.558Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[debug] [2025-08-06T15:00:30.350Z] [hosting] release: {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754492429558000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/7a6e17d0f98e823d","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T15:00:24.141729Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T15:00:29.400432Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T15:00:29.558Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[info] ✔  hosting[chitrayaan-website-7122233]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/chitrayaan-website-7122233/overview
+[info] Hosting URL: https://chitrayaan-website-7122233.web.app
+[debug] [2025-08-06T15:03:12.463Z] ----------------------------------------------------------------------
+[debug] [2025-08-06T15:03:12.468Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-08-06T15:03:12.468Z] CLI Version:   14.11.2
+[debug] [2025-08-06T15:03:12.468Z] Platform:      darwin
+[debug] [2025-08-06T15:03:12.469Z] Node Version:  v22.15.0
+[debug] [2025-08-06T15:03:12.469Z] Time:          Wed Aug 06 2025 20:33:12 GMT+0530 (India Standard Time)
+[debug] [2025-08-06T15:03:12.469Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-06T15:03:12.649Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-06T15:03:12.649Z] > authorizing via signed-in user (ranit53222@gmail.com)
+[debug] [2025-08-06T15:03:12.649Z] [iam] checking project chitrayaan-website-7122233 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-06T15:03:12.650Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:12.650Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:12.651Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions [none]
+[debug] [2025-08-06T15:03:12.651Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions x-goog-quota-user=projects/chitrayaan-website-7122233
+[debug] [2025-08-06T15:03:12.651Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T15:03:14.211Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions 200
+[debug] [2025-08-06T15:03:14.211Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chitrayaan-website-7122233:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-06T15:03:14.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:14.211Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:14.212Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 [none]
+[debug] [2025-08-06T15:03:14.722Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 200
+[debug] [2025-08-06T15:03:14.722Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chitrayaan-website-7122233 {"projectId":"chitrayaan-website-7122233","projectNumber":"293195269146","displayName":"Chitrayaan Website","name":"projects/chitrayaan-website-7122233","resources":{"hostingSite":"chitrayaan-website-7122233"},"state":"ACTIVE","etag":"1_907d3a86-ae4a-4f7f-90f4-4fa4b04519b4"}
+[info] 
+[info] === Deploying to 'chitrayaan-website-7122233'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-06T15:03:14.727Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:14.727Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:14.727Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions [none]
+[debug] [2025-08-06T15:03:14.727Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-06T15:03:16.157Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions 200
+[debug] [2025-08-06T15:03:16.157Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[chitrayaan-website-7122233]: beginning deploy... 
+[info] i  hosting[chitrayaan-website-7122233]: found 17 files in build 
+[debug] [2025-08-06T15:03:16.166Z] [hosting] uploading with 200 concurrency
+[debug] [2025-08-06T15:03:17.073Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.073Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.074Z] [hosting] hash cache [YnVpbGQ] stored for 17 files
+[debug] [2025-08-06T15:03:17.074Z] [hosting][hash queue][FINAL] {"max":904,"min":4,"avg":82,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":908}
+[debug] [2025-08-06T15:03:17.074Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735:populateFiles [none]
+[debug] [2025-08-06T15:03:17.074Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735:populateFiles {"files":{"/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/manifest.json":"4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","/asset-manifest.json":"576dd6cd31adeeba0ed71fba3cb7952b70aac6728b2d85422ce9ec8785cdff34","/favicon.ico":"1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","/logo192.png":"f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150","/index.html":"03201a9947df09b75195277b7c44488a788003db6a72fda45f118eedbf5a1d47","/static/js/453.670e15c7.chunk.js":"bc23a5f561581b120bebd5842513091ba12466cb704885acd0e4b10d815d0f7e","/logo512.png":"2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","/static/js/453.670e15c7.chunk.js.map":"154a41b8e5bb960b66413a66a8b55f1a14231231d4e3b5de01b17db0725b9549","/static/js/main.203867cd.js.LICENSE.txt":"36c21fada49c6749891e4681e169c04a1f80650b345eb75e78f5f81ddd4449ea","/static/css/main.c3304623.css":"02154dc6917f464dbb11cb69677afd763067a581ab0f3146148cd7083fde2edb","/static/js/main.203867cd.js":"365925df34c9392394a9dd78e2f9953bda6c08a4d525f4f6d3542eca1d1a4e5d","/static/css/main.c3304623.css.map":"685f3bb89fa1f2d26a8757680dc551349f5a0bf3f5d6f3e02955d1a0aad71e75","/static/media/chitraYaanLogo.5ed36c41c6ebd210c36c.png":"53ca6825fe6a7c20b06096c55738b2e0758eed4fe5b6e283dc6b8fb952d19f31","/static/media/iamge.349ef384c5f29aaf36f3.png":"8442411bce78c795a9baa0bf9106774a057e7e49983206dd1d1c7f6d91eda9ce","/static/js/main.203867cd.js.map":"e8e4b946642542eb59d8b7ab0134c777675c72b7b38747fba32b7294e4683244","/static/media/back.ac7df313e510808a5397.mp4":"8eb41508ba6aae5bd9fb00c5b632dbf49339fd8f8f4a40a38d84ab0414cb7d35"}}
+[debug] [2025-08-06T15:03:17.585Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735:populateFiles 200
+[debug] [2025-08-06T15:03:17.585Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/293195269146/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735:populateFiles {"uploadRequiredHashes":["576dd6cd31adeeba0ed71fba3cb7952b70aac6728b2d85422ce9ec8785cdff34","e8e4b946642542eb59d8b7ab0134c777675c72b7b38747fba32b7294e4683244","365925df34c9392394a9dd78e2f9953bda6c08a4d525f4f6d3542eca1d1a4e5d","03201a9947df09b75195277b7c44488a788003db6a72fda45f118eedbf5a1d47"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files"}
+[debug] [2025-08-06T15:03:17.586Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.586Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.586Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.586Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.586Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.586Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.586Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.586Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:17.586Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/576dd6cd31adeeba0ed71fba3cb7952b70aac6728b2d85422ce9ec8785cdff34 [none]
+[debug] [2025-08-06T15:03:17.586Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/576dd6cd31adeeba0ed71fba3cb7952b70aac6728b2d85422ce9ec8785cdff34 [stream]
+[debug] [2025-08-06T15:03:17.587Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/e8e4b946642542eb59d8b7ab0134c777675c72b7b38747fba32b7294e4683244 [none]
+[debug] [2025-08-06T15:03:17.587Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/e8e4b946642542eb59d8b7ab0134c777675c72b7b38747fba32b7294e4683244 [stream]
+[debug] [2025-08-06T15:03:17.587Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/365925df34c9392394a9dd78e2f9953bda6c08a4d525f4f6d3542eca1d1a4e5d [none]
+[debug] [2025-08-06T15:03:17.587Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/365925df34c9392394a9dd78e2f9953bda6c08a4d525f4f6d3542eca1d1a4e5d [stream]
+[debug] [2025-08-06T15:03:17.588Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/03201a9947df09b75195277b7c44488a788003db6a72fda45f118eedbf5a1d47 [none]
+[debug] [2025-08-06T15:03:17.588Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/03201a9947df09b75195277b7c44488a788003db6a72fda45f118eedbf5a1d47 [stream]
+[debug] [2025-08-06T15:03:17.588Z] [hosting][populate queue][FINAL] {"max":514,"min":514,"avg":514,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":516}
+[debug] [2025-08-06T15:03:17.588Z] [hosting] uploads queued: 4
+[info] i  hosting: uploading new files [0/4] (0%) 
+[debug] [2025-08-06T15:03:18.954Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/576dd6cd31adeeba0ed71fba3cb7952b70aac6728b2d85422ce9ec8785cdff34 200
+[debug] [2025-08-06T15:03:18.954Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/576dd6cd31adeeba0ed71fba3cb7952b70aac6728b2d85422ce9ec8785cdff34 [stream]
+[debug] [2025-08-06T15:03:19.050Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/365925df34c9392394a9dd78e2f9953bda6c08a4d525f4f6d3542eca1d1a4e5d 200
+[debug] [2025-08-06T15:03:19.050Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/365925df34c9392394a9dd78e2f9953bda6c08a4d525f4f6d3542eca1d1a4e5d [stream]
+[debug] [2025-08-06T15:03:19.135Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/03201a9947df09b75195277b7c44488a788003db6a72fda45f118eedbf5a1d47 200
+[debug] [2025-08-06T15:03:19.135Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/03201a9947df09b75195277b7c44488a788003db6a72fda45f118eedbf5a1d47 [stream]
+[debug] [2025-08-06T15:03:19.327Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/e8e4b946642542eb59d8b7ab0134c777675c72b7b38747fba32b7294e4683244 200
+[debug] [2025-08-06T15:03:19.327Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735/files/e8e4b946642542eb59d8b7ab0134c777675c72b7b38747fba32b7294e4683244 [stream]
+[debug] [2025-08-06T15:03:19.327Z] [hosting][upload queue][FINAL] {"max":1741,"min":1369,"avg":1530.75,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":1742}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[chitrayaan-website-7122233]: file upload complete 
+[debug] [2025-08-06T15:03:19.327Z] [hosting] deploy completed after 3169ms
+[debug] [2025-08-06T15:03:19.327Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "chitrayaan-website-7122233"
+    },
+    "version": "projects/293195269146/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735"
+  }
+]
+[info] i  hosting[chitrayaan-website-7122233]: finalizing version... 
+[debug] [2025-08-06T15:03:19.328Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:19.328Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:19.328Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735 updateMask=status%2Cconfig
+[debug] [2025-08-06T15:03:19.328Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-08-06T15:03:20.059Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735 200
+[debug] [2025-08-06T15:03:20.059Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735 {"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T15:03:15.662705Z","createUser":{"email":"ranit53222@gmail.com"},"finalizeTime":"2025-08-06T15:03:19.901593Z","finalizeUser":{"email":"ranit53222@gmail.com"}}
+[debug] [2025-08-06T15:03:20.059Z] [hosting] finalized version for chitrayaan-website-7122233:[object Object]
+[info] ✔  hosting[chitrayaan-website-7122233]: version finalized 
+[info] i  hosting[chitrayaan-website-7122233]: releasing new version... 
+[debug] [2025-08-06T15:03:20.060Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:20.060Z] Checked if tokens are valid: true, expires at: 1754495109152
+[debug] [2025-08-06T15:03:20.060Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases versionName=projects%2F293195269146%2Fsites%2Fchitrayaan-website-7122233%2Fversions%2F9d4a6a57b03bc735
+[debug] [2025-08-06T15:03:20.060Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {}
+[debug] [2025-08-06T15:03:20.827Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases 200
+[debug] [2025-08-06T15:03:20.827Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/chitrayaan-website-7122233/channels/live/releases {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754492600049000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T15:03:15.662705Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T15:03:19.901593Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T15:03:20.049Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[debug] [2025-08-06T15:03:20.827Z] [hosting] release: {"name":"projects/293195269146/sites/chitrayaan-website-7122233/channels/live/releases/1754492600049000","version":{"name":"projects/293195269146/sites/chitrayaan-website-7122233/versions/9d4a6a57b03bc735","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-08-06T15:03:15.662705Z","createUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"},"finalizeTime":"2025-08-06T15:03:19.901593Z","finalizeUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}},"type":"DEPLOY","releaseTime":"2025-08-06T15:03:20.049Z","releaseUser":{"email":"ranit53222@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJtCZoSImqvX7VTeliHXuoku-pX8GQKohKrWbHvUTqJ1M9HC5I"}}
+[info] ✔  hosting[chitrayaan-website-7122233]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/chitrayaan-website-7122233/overview
+[info] Hosting URL: https://chitrayaan-website-7122233.web.app

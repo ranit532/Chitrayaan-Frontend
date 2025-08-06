@@ -9,21 +9,39 @@ body {
 
 .hero-section {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   overflow: hidden; /* Hide any overflow from the video */
+  background-color: transparent; /* Ensure it doesn't block the video */
+  /* Default background for mobile (image) */
+  background-image: url('./assets/iamge.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px; /* Adjust this value to move content down from the top */
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+/* Hide video on mobile, show on desktop */
+.hero-section video {
+  display: none; /* Hide video by default */
+}
+
+@media (min-width: 769px) {
+  .hero-section {
+    background-image: none; /* Remove image on desktop */
+  }
+  .hero-section video {
+    display: block; /* Show video on desktop */
+  }
+}
+
+.hero-section h1 {
+  font-size: 2.5rem; /* Adjust font size for mobile */
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.1rem; /* Adjust font size for mobile */
+  margin-bottom: 2rem;
 }
 
 .card {

@@ -3,6 +3,11 @@ html, body {
   padding: 0;
   height: 100%;
   overflow-x: hidden; /* Prevent horizontal scroll */
+  background-color: #000; /* Solid black background as fallback */
+}
+
+:root {
+  --vh: 100vh; /* Fallback for browsers that don't support custom properties */
 }
 
 body {
