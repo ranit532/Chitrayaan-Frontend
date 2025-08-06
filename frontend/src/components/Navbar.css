@@ -1,0 +1,39 @@
+/* Navbar.css */
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.6) !important; /* Slightly darker transparent background */
+  backdrop-filter: blur(8px); /* Stronger blur for depth */
+  padding: 0.75rem 1rem; /* Adjusted padding for a more compact look */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle bottom border */
+}
+
+.custom-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1.5rem; /* Slightly larger brand text */
+}
+
+.custom-navbar .navbar-brand img {
+  margin-right: 0.5rem;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-left: 1.5rem; /* Spacing between nav items */
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover,
+.custom-navbar .navbar-nav .nav-link.active {
+  color: #ffd700 !important; /* Gold color for hover/active */
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
